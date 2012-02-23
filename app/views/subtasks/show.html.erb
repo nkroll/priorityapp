@@ -1,0 +1,18 @@
+
+<label class="label"><%= t("activerecord.attributes.subtask.name", :default => t("activerecord.labels.name", :default => "Name")) %>:</label>
+<p><%= @subtask.name %></p>
+
+<label class="label"><%= t("activerecord.attributes.subtask.deadline", :default => t("activerecord.labels.deadline", :default => "Deadline")) %>:</label>
+<p><%= @subtask.deadline %></p>
+
+<label class="label"><%= t("activerecord.attributes.subtask.notes", :default => t("activerecord.labels.notes", :default => "Notes")) %>:</label>
+<p><%= @subtask.notes %></p>
+
+<label class="label"><%= t("activerecord.attributes.subtask.task_id", :default => t("activerecord.labels.task_id", :default => "Task")) %>:</label>
+<p><%= @subtask.task_id %></p>
+
+<div class="form-actions">
+<%= link_to "Back", subtasks_path, :class => 'btn'  %>
+<%= link_to "Edit", edit_subtask_path(@subtask), :class => 'btn' %>
+<%= link_to "Delete", subtask_path(@subtask), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+</div>

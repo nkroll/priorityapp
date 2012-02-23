@@ -1,0 +1,24 @@
+
+<label class="label"><%= t("activerecord.attributes.user.first_name", :default => t("activerecord.labels.first_name", :default => "First name")) %>:</label>
+<p><%= @user.first_name %></p>
+
+<label class="label"><%= t("activerecord.attributes.user.last_name", :default => t("activerecord.labels.last_name", :default => "Last name")) %>:</label>
+<p><%= @user.last_name %></p>
+
+<label class="label"><%= t("activerecord.attributes.user.email", :default => t("activerecord.labels.email", :default => "Email")) %>:</label>
+<p><%= @user.email %></p>
+
+<label class="label"><%= t("activerecord.attributes.user.password_digest", :default => t("activerecord.labels.password_digest", :default => "Password digest")) %>:</label>
+<p><%= @user.password_digest %></p>
+
+<label class="label"><%= t("activerecord.attributes.user.city", :default => t("activerecord.labels.city", :default => "City")) %>:</label>
+<p><%= @user.city %></p>
+
+<label class="label"><%= t("activerecord.attributes.user.state", :default => t("activerecord.labels.state", :default => "State")) %>:</label>
+<p><%= @user.state %></p>
+
+<div class="form-actions">
+<%= link_to "Back", users_path, :class => 'btn'  %>
+<%= link_to "Edit", edit_user_path(@user), :class => 'btn' %>
+<%= link_to "Delete", user_path(@user), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn' %>
+</div>

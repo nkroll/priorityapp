@@ -1,0 +1,54 @@
+
+<div class="clearfix">
+   <%= f.label :first_name, t("activerecord.attributes.user.first_name", :default => "First name"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :first_name, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :last_name, t("activerecord.attributes.user.last_name", :default => "Last name"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :last_name, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :email, t("activerecord.attributes.user.email", :default => "Email"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :email, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :password, :class => :label %>
+  <div class="input">
+    <%= f.password_field :password, :class => 'password_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :password_confirmation, :class => :label %>
+  <div class="input">
+    <%= f.password_field :password_confirmation, :class => 'password_field' %>
+  </div>
+</div>
+
+
+<div class="clearfix">
+   <%= f.label :city, t("activerecord.attributes.user.city", :default => "City"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :city, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :state, t("activerecord.attributes.user.state", :default => "State"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :state, :class => 'text_field' %>
+  </div>
+</div>
+<div class="form-actions">
+  <button class="btn primary" type="submit">Save</button> or
+	<%= link_to "Cancel", users_path %>
+</div>

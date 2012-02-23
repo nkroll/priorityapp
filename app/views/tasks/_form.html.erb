@@ -1,0 +1,43 @@
+
+<div class="clearfix">
+   <%= f.label :name, t("activerecord.attributes.task.name", :default => "Name"), :class => :label %>
+  <div class="input">
+    <%= f.text_field :name, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :deadline, t("activerecord.attributes.task.deadline", :default => "Deadline"), :class => :label %>
+  <div class="input">
+    <%= f.date_select :deadline, :class => 'date_select' %>
+  </div>
+</div>
+
+
+
+<div class="clearfix">
+   <%= f.label :notes, t("activerecord.attributes.task.notes", :default => "Notes"), :class => :label %>
+  <div class="input">
+    <%= f.text_area :notes, :class => 'text_field' %>
+  </div>
+</div>
+
+<div class="clearfix">
+   <%= f.label :quadrant_id, t("activerecord.attributes.task.quadrant_id", :default => "Quadrant"), :class => :label %>
+  <div class="input">
+	<%= f.label(:quadrant_id_1, "Fire-Fighting") %>
+    <%= f.radio_button(:quadrant_id, "1") %>
+  </div>
+  <div class="input">
+	<%= f.label(:quadrant_id_2, "Production") %>
+	<%= f.radio_button(:quadrant_id, "2") %>
+  </div>
+  <div class="input">
+	<%= f.label(:quadrant_id_3, "Distraction") %>
+	<%= f.radio_button(:quadrant_id, "3") %>
+  </div>	
+</div>
+
+<div class="form-actions">
+<button class="btn-danger" style="margin-right:15px"><%= link_to "Cancel", tasks_path %></button> | <button class="btn-primary" type="submit" style="margin-left:15px">Save</button>
+</div>

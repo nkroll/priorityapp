@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  deadline: 2012-02-22 19:13:44
+  notes: MyString
+  quadrant_id: 1
+  user_id: 1
+
+two:
+  name: MyString
+  deadline: 2012-02-22 19:13:44
+  notes: MyString
+  quadrant_id: 1
+  user_id: 1

@@ -1,0 +1,30 @@
+<h1>Subtasks</h1>
+<table class="table table-striped">
+ <thead>
+  <tr>
+    <th>ID</th>
+        <th>
+      <%= t("activerecord.attributes.subtask.name", :default => t("activerecord.labels.name", :default => "Name")) %>
+    </th>
+        <th>Created at</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @subtasks.each do |subtask| -%>
+   <tr>
+    <td><%= subtask.id %></td>
+        <td><%= link_to subtask.name, subtask_path(subtask) %>
+    </td>
+        <td><%= subtask.created_at %></td>
+    <td>
+      <%= link_to "Show", subtask_path(subtask) %>
+      <%= link_to "Edit", edit_subtask_path(subtask) %>
+      <%= link_to "Destroy", subtask_path(subtask), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+    </td>
+    </tr>
+    <% end -%>
+   </tbody>
+</table>
+
+<%= link_to "New", new_subtask_path, :class => 'btn btn-primary' %>

@@ -1,0 +1,65 @@
+<div class="fires">
+	<h2>Fires</h2>
+	<table class="table table-striped">
+ 		<thead>
+  			<tr>
+    			<th>Task</th>
+    			<th>Days Left</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  		<% @fires.each do |task| -%>
+   			<tr>
+    			<td><%= link_to task.name, task_path(task) %></td>
+    			<td><%= distance_of_time_in_words(Time.now, task.deadline) %></td>
+    		</tr>
+    	<% end -%>
+   		</tbody>
+	</table>
+
+ <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
+</div>
+
+<div class="production">
+	<h2>Production</h2>
+	<table class="table table-striped">
+ 		<thead>
+  			<tr>
+    			<th>Task</th>
+    			<th>Days Left</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  		<% @production.each do |task| -%>
+   			<tr>
+    			<td><%= link_to task.name, task_path(task) %></td>
+    			<td><%= distance_of_time_in_words(Time.now, task.deadline) %></td>
+    		</tr>
+    	<% end -%>
+   		</tbody>
+	</table>
+
+ <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
+</div>
+
+<div class="distractions">
+	<h2>Distractions</h2>
+	<table class="table table-striped">
+ 		<thead>
+  			<tr>
+    			<th>Task</th>
+    			<th>Days Left</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  		<% @distractions.each do |task| -%>
+   			<tr>
+    			<td><%= link_to task.name, task_path(task) %></td>
+    			<td><%= distance_of_time_in_words(Time.now, task.deadline) %></td>
+    		</tr>
+    	<% end -%>
+   		</tbody>
+	</table>
+
+ <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
+</div>

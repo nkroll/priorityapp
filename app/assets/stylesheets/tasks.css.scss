@@ -1,0 +1,41 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.text_field {
+width:80%;
+}
+
+.fires {
+width:409px;
+height:287px;
+position:relative;
+top:95px;
+left:102px;
+float:left;
+overflow-x:hidden;
+overflow-y:auto;
+
+}
+
+.production {
+width:409px;
+height:287px;
+background:lightgreen;
+position:relative;
+top:95px;
+left:102px;
+float:left;
+margin-left:1px;
+}
+
+.distractions {
+width:409px;
+height:287px;
+background:yellow;
+position:relative;
+top:95px;
+left:102px;
+float:left;
+margin-top:1px;
+}

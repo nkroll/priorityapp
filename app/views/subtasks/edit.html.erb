@@ -1,0 +1,4 @@
+<%= form_for @subtask, :url => subtask_path(@subtask), :html => { :class => "edit_subtask", :id => "edit_subtask" } do |f| -%>
+  <input name="_method" type="hidden" value="put" />
+  <%= render :partial => "form", :locals => {:f => f} %>
+<% end -%>
