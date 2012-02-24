@@ -18,7 +18,6 @@ margin: 0px 20px 12px 20px;
 
 #newtaskaction {
 float:right;
-background-color: purple;
 border-top: none;
 padding: 0px;
 margin-top: 0px;
@@ -30,7 +29,6 @@ width:960px;
 height:600px;
 position:relative;
 left:32px;
-top:102px;
 }
 
 .quadbox {
@@ -51,11 +49,14 @@ width:90%;
 margin:auto auto;
 }
 
+.quadbox table a{
+color:black;
+}
+
 .tablewrap {
-height:230px;
+height:200px;
 width:480px;
 overflow-y: auto;
 overflow-x: hidden;
 }
-
 

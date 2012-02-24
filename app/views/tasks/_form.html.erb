@@ -1,13 +1,13 @@
 
 <div class="clearfix">
-   <%= f.label :name, t("activerecord.attributes.task.name", :default => "Name"), :class => :label %>
+   <%= f.label :name, :class => :label %>
   <div class="input">
     <%= f.text_field :name, :class => 'text_field' %>
   </div>
 </div>
 
 <div class="clearfix">
-   <%= f.label :deadline, t("activerecord.attributes.task.deadline", :default => "Deadline"), :class => :label %>
+   <%= f.label :deadline, :class => :label %>
   <div class="input">
     <%= f.date_select :deadline, :class => 'date_select' %>
   </div>
@@ -16,16 +16,16 @@
 
 
 <div class="clearfix">
-   <%= f.label :notes, t("activerecord.attributes.task.notes", :default => "Notes"), :class => :label %>
+   <%= f.label :notes,  :class => :label %>
   <div class="input">
     <%= f.text_area :notes, :class => 'text_field' %>
   </div>
 </div>
 
 <div class="clearfix">
-   <%= f.label :quadrant_id, t("activerecord.attributes.task.quadrant_id", :default => "Quadrant"), :class => :label %>
+   <%= f.label :quadrant_id, :class => :label %>
   <div class="input" id="quadradio">
-	<%= f.label(:quadrant_id_1, "Fire-Fighting") %>
+	<%= f.label(:quadrant_id_1, "Fire") %>
     <%= f.radio_button(:quadrant_id, "1") %>
   </div>
   <div class="input" id="quadradio">
@@ -33,8 +33,12 @@
 	<%= f.radio_button(:quadrant_id, "2") %>
   </div>
   <div class="input" id="quadradio">
-	<%= f.label(:quadrant_id_3, "Distraction") %>
+	<%= f.label(:quadrant_id_3, "Required") %>
 	<%= f.radio_button(:quadrant_id, "3") %>
+  </div>	
+  <div class="input" id="quadradio">
+	<%= f.label(:quadrant_id_3, "Goal") %>
+	<%= f.radio_button(:quadrant_id, "4") %>
   </div>	
 </div>
 

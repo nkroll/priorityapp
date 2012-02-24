@@ -4,7 +4,8 @@ class TasksController < FiltersController
     @tasks = Task.where(:user_id => session[:user_id])
     @fires = @tasks.where(:quadrant_id => 1) 
     @production = @tasks.where(:quadrant_id => 2) 
-    @distractions = @tasks.where(:quadrant_id => 3) 
+    @requirements = @tasks.where(:quadrant_id => 3) 
+    @goals = @tasks.where(:quadrant_id => 4) 
     @task = Task.new
     @task.user = User.find_by_id(session[:user_id])
     

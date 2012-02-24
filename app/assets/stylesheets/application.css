@@ -16,12 +16,18 @@
 html,body {
 	width:100%;
 	height:100%;
+	background-image: url(../assets/background.png);
+	
 }
 
 #background {
 	width:100%;
 	height:100%;
-	background:black;
+	background-image: url(../assets/background.png);
 
 }
 
+#priorityquads {
+height:95px;
+width:100%;
+}
