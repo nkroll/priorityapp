@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require twitter/bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+
+	$('#myModal').modal('toggle')
+	$('#ProdModal').modal('toggle')
+	$('#DistModal').modal('toggle')
+
+});

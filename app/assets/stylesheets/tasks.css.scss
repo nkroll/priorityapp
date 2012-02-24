@@ -3,39 +3,52 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .text_field {
-width:80%;
+width:90%;
 }
 
-.fires {
-width:409px;
-height:287px;
+textarea {
+height:100px;
+}
+
+#quadradio.input {
+float:left;
+margin: 0px 20px 12px 20px;
+}
+
+#newtaskaction {
+float:right;
+background-color: purple;
+border-top: none;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.quadwrap {
+width:960px;
+height:600px;
 position:relative;
-top:95px;
-left:102px;
+left:32px;
+top:102px;
+}
+
+.quadbox {
+background-image: url(../assets/quadrant.png);
+background-repeat:no-repeat;
+width:480px;
+height:300px;
 float:left;
 overflow-x:hidden;
-overflow-y:auto;
-
+overflow-y:scroll;
 }
 
-.production {
-width:409px;
-height:287px;
-background:lightgreen;
-position:relative;
-top:95px;
-left:102px;
-float:left;
-margin-left:1px;
+.quadbox h2 {
+margin-left:18px;
 }
 
-.distractions {
-width:409px;
-height:287px;
-background:yellow;
-position:relative;
-top:95px;
-left:102px;
-float:left;
-margin-top:1px;
+.quadbox table {
+width:90%;
+margin:auto auto;
 }
+
+

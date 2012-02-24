@@ -24,20 +24,20 @@
 
 <div class="clearfix">
    <%= f.label :quadrant_id, t("activerecord.attributes.task.quadrant_id", :default => "Quadrant"), :class => :label %>
-  <div class="input">
+  <div class="input" id="quadradio">
 	<%= f.label(:quadrant_id_1, "Fire-Fighting") %>
     <%= f.radio_button(:quadrant_id, "1") %>
   </div>
-  <div class="input">
+  <div class="input" id="quadradio">
 	<%= f.label(:quadrant_id_2, "Production") %>
 	<%= f.radio_button(:quadrant_id, "2") %>
   </div>
-  <div class="input">
+  <div class="input" id="quadradio">
 	<%= f.label(:quadrant_id_3, "Distraction") %>
 	<%= f.radio_button(:quadrant_id, "3") %>
   </div>	
 </div>
 
-<div class="form-actions">
-<button class="btn-danger" style="margin-right:15px"><%= link_to "Cancel", tasks_path %></button> | <button class="btn-primary" type="submit" style="margin-left:15px">Save</button>
+<div class="form-actions" id="newtaskaction">
+<button class="btn-primary" type="submit">Save</button>
 </div>

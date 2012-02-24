@@ -1,6 +1,9 @@
-<div class="fires">
-	<h2>Fires</h2>
-	<table class="table table-striped">
+<div class="quadwrap">
+<div class="quadbox" id="fires">
+	<h2 style="float:left;margin-right:10px;">Fires</h2> 
+	<a class="btn" data-toggle="modal" href="#myModal" style="margin-top:4px;">New+</a>
+	
+	<table class="table table-striped table-bordered table-condensed">
  		<thead>
   			<tr>
     			<th>Task</th>
@@ -16,13 +19,13 @@
     	<% end -%>
    		</tbody>
 	</table>
-
- <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
 </div>
 
-<div class="production">
-	<h2>Production</h2>
-	<table class="table table-striped">
+<div class="quadbox" id="production">
+	<h2 style="float:left;margin-right:10px;">Production</h2>
+	<a class="btn" data-toggle="modal" href="#myModal" style="margin-top:4px;">New+</a>
+	
+	<table class="table table-striped table-bordered table-condensed">
  		<thead>
   			<tr>
     			<th>Task</th>
@@ -38,13 +41,13 @@
     	<% end -%>
    		</tbody>
 	</table>
-
- <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
 </div>
 
-<div class="distractions">
-	<h2>Distractions</h2>
-	<table class="table table-striped">
+<div class="quadbox" id="distractions">
+	<a class="btn" data-toggle="modal" href="#myModal" style="margin-top:4px;">New+</a>
+	
+	<h2 style="float:left;margin-right:10px;">Distractions</h2>
+	<table class="table table-striped table-bordered table-condensed">
  		<thead>
   			<tr>
     			<th>Task</th>
@@ -60,6 +63,16 @@
     	<% end -%>
    		</tbody>
 	</table>
-
- <%= link_to "New", new_task_path, :class => 'btn btn-primary' %>
 </div>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>New Task!</h3>
+  </div>
+  <div class="modal-body">
+    <%= render 'newtask' %>
+  </div>
+</div>
+

@@ -5,6 +5,9 @@ class TasksController < FiltersController
     @fires = @tasks.where(:quadrant_id => 1) 
     @production = @tasks.where(:quadrant_id => 2) 
     @distractions = @tasks.where(:quadrant_id => 3) 
+    @task = Task.new
+    @task.user = User.find_by_id(session[:user_id])
+    
   end
   
   # GET /tasks/1
@@ -23,6 +26,9 @@ class TasksController < FiltersController
       format.html # new.html.erb
       format.json { render json: @task }
     end
+  end
+  
+  def taskmodal
   end
 
   # GET /tasks/1/edit
