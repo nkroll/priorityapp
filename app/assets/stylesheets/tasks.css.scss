@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .text_field {
 width:90%;
 }
@@ -38,8 +39,7 @@ background-repeat:no-repeat;
 width:480px;
 height:300px;
 float:left;
-overflow-x:hidden;
-overflow-y:scroll;
+overflow:hidden;
 }
 
 .quadbox h2 {
@@ -49,6 +49,13 @@ margin-left:18px;
 .quadbox table {
 width:90%;
 margin:auto auto;
+}
+
+.tablewrap {
+height:230px;
+width:480px;
+overflow-y: auto;
+overflow-x: hidden;
 }
 
 
