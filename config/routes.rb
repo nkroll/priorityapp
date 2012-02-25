@@ -4,7 +4,7 @@ Priorityapp::Application.routes.draw do
   get '/login' => "sessions#new", :as => :new_session
   post '/sessions' => "sessions#create"
   
-  root :to => "sessions#new"
+  root :to => "tasks#index"
   
   resources :subtasks
 

@@ -19,7 +19,5 @@
 $(document).ready(function(){
 
 	$('#myModal').modal('toggle')
-	$('#ProdModal').modal('toggle')
-	$('#DistModal').modal('toggle')
 
 });
