@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     if user.present?
       if user.authenticate(params[:password])
         session[:user_id] = user.id
-        redirect_to new_task_path, :notice => "Welcome Back #{user.first_name}!"
+        redirect_to tasks_path, :notice => "Welcome Back #{user.first_name}!"
       else
         redirect_to new_session_url, :notice => "Sorry! Try Again!"
       end
